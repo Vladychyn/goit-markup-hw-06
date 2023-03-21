@@ -410,7 +410,13 @@
                 </form>
             </div>
             <div>
-                <button class="btn-subscribe">Subscribe</button>
+                <button class="btn-subscribe">Subscribe
+                    <span>
+                        <svg class="footer-button-icon" width="24" hieght="20px">
+                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-send"></use>
+                        </svg>
+                    </span>
+                </button>
             </div>
         </div>
     </footer>
@@ -424,7 +430,7 @@
             <h3 class="modal-button-title">Leave your contacts and we will call you back</h3>
             <form class="modal-form form">
                 <div class="input-form">
-                    <label for="name" class="form-input-text">
+                    <label for="name" class="form-input-label">
                         <span>Name</span>
                         <input type="text" id="name" class="form-input" name="fillname" required>
                         <svg class="input-icon" width="18px" height="18px">
@@ -432,30 +438,47 @@
                         </svg>
                     </label>
                 </div>
-                <div class="input-form">
-                    <label for="phone" class="form-input-text">
-                        <span>Phone</span>
-                        <input type="tel" id="phone" class="form-input" name="fillphone" required>
-                        <svg class="input-icon" width="18px" height="18px">
-                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-phone"></use>
+                <div class="input-section">
+                    <label for="phone" class="form-input-label">
+                        <div class="input-wrap">
+                            <span>Phone</span>
+                            <input type="tel" id="phone" class="form-input" name="fillphone" required>
+                            <svg class="input-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg/symbol-defs-4.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="input-section">
+                    <label for="email" class="form-input-label">
+                        <div class="input-wrap">
+                            <span>Email</span>
+                            <input type="email" id="email" class="form-input" name="fillemail" required>
+                            <svg class="input-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg/symbol-defs-4.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="input-section">
+                    <label for="comment" class="form-input-label">
+                        <div class="input-wrap">
+                            <span>Comment</span>
+                            <input type="text" id="comment" class="form-text-input" placeholder="Text input">
+                        </div>
+                    </label>
+                </div>
+
+                <input type="checkbox" name="check" class="form-checkbox visually-hidden" id="option-1">
+                <label for="option-1" class="form-label-checkbox">I accept the terms and conditions of the
+                    <span checkbox-link-wrap>
+                        <a href="" class="form-link-chekbox">Privacy Policy</a></span>
+                    <div>
+                        <svg class="form-checkbox-item" width="10px" height="8px">
+                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-check"></use>
                         </svg>
-                    </label>
-                </div>
-                <div class="input-form">
-                    <label for="email" class="form-input-text">
-                        <span>Email</span>
-                        <input type="email" id="email" class="form-input" name="fillemail" required>
-                        <svg class="input-icon" width="18px" height="18px">
-                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-email"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div class="input-form">
-                    <label for="comment" class="form-input-text">
-                        <span>Comment</span>
-                        <input type="text" id="comment" class="form-text-input" placeholder="Text input">
-                    </label>
-                </div>
+                    </div>
+                </label>
                 <button type="submit" class="input-button">Send</button>
             </form>
 
