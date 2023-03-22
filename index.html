@@ -406,7 +406,7 @@
             <div class="footer-input">
                 <p class="title-subscribe">Subscribe</p>
                 <form class="footer-form">
-                    <input type="text" class="input-subscribe" placeholder="E-mail">
+                    <input type="email" name="email" class="input-subscribe" placeholder="E-mail">
                     <button class="btn-subscribe">Subscribe
 
                         <svg class="footer-button-icon" width="24" height="20px">
@@ -416,6 +416,7 @@
                     </button>
                 </form>
             </div>
+        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -428,7 +429,7 @@
             <form class="modal-form form">
                 <label for="name" class="input-section form-input-label ">
                     <span class="label-text">Name</span>
-                    <span input-form-icon>
+                    <span class="input-form-icon">
                         <input type="text" id="name" class="form-input" name="fillname" required>
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-person"></use>
@@ -437,8 +438,8 @@
                 </label>
                 <label for="phone" class="input-section form-input-label">
 
-                    <span label-text>Phone</span>
-                    <span input-form-icon>
+                    <span class="label-text">Phone</span>
+                    <span class="input-form-icon">
                         <input type="tel" id="phone" class="form-input" name="fillphone" required>
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-phone"></use>
@@ -447,8 +448,8 @@
                 </label>
                 <label for="email" class="input-section form-input-label ">
 
-                    <span label-text>Email</span>
-                    <span input-form-icon>
+                    <span class="label-text">Email</span>
+                    <span class="input-form-icon">
                         <input type="email" id="email" class="form-input" name="fillemail" required>
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-email"></use>
@@ -457,18 +458,19 @@
                 </label>
                 <label for="comment" class="input-section-comment form-input-label">
 
-                    <span label-text>Comment</span>
-                    <textarea type="text" id="comment" class="form-text-input" placeholder="Text input">
+                    <span class="label-text">Comment</span>
+                    <textarea type="text" id="comment" name="text" id="" cols="30" rows="10" class="form-text-input"
+                        placeholder="Text input"></textarea>
 
                 </label>
                 <input type="checkbox" name="check" class="form-checkbox visually-hidden" id="option-1">
                 <label for="option-1" class="form-label-checkbox">
-                     <span>
+                    <span>
                         <svg class="form-checkbox-item" width="10px" height="8px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-check"></use>
                         </svg>
                     </span>I accept the terms and conditions of the
-                        <a href="" class="form-link-chekbox">Privacy Policy</a>
+                    <a href="" class="form-link-chekbox">Privacy Policy</a>
                 </label>
                 <button type="submit" class="input-button">Send</button>
             </form>
