@@ -405,20 +405,17 @@
             </div>
             <div class="footer-input">
                 <p class="title-subscribe">Subscribe</p>
-                <form>
+                <form class="footer-form">
                     <input type="text" class="input-subscribe" placeholder="E-mail">
-                </form>
-            </div>
-            <div>
-                <button class="btn-subscribe">Subscribe
-                    <span>
-                        <svg class="footer-button-icon" width="24" hieght="20px">
+                    <button class="btn-subscribe">Subscribe
+
+                        <svg class="footer-button-icon" width="24" height="20px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-send"></use>
                         </svg>
-                    </span>
-                </button>
+
+                    </button>
+                </form>
             </div>
-        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -427,57 +424,51 @@
                     <use href="./images/icons.svg/symbol-defs-4.svg#icon-close"></use>
                 </svg>
             </button>
-            <h3 class="modal-button-title">Leave your contacts and we will call you back</h3>
+            <p class="modal-button-title">Leave your contacts and we will call you back</p>
             <form class="modal-form form">
-                <div class="input-form">
-                    <label for="name" class="form-input-label">
-                        <span>Name</span>
+                <label for="name" class="input-section form-input-label ">
+                    <span class="label-text">Name</span>
+                    <span input-form-icon>
                         <input type="text" id="name" class="form-input" name="fillname" required>
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-person"></use>
                         </svg>
-                    </label>
-                </div>
-                <div class="input-section">
-                    <label for="phone" class="form-input-label">
-                        <div class="input-wrap">
-                            <span>Phone</span>
-                            <input type="tel" id="phone" class="form-input" name="fillphone" required>
-                            <svg class="input-icon" width="18px" height="18px">
-                                <use href="./images/icons.svg/symbol-defs-4.svg#icon-phone"></use>
-                            </svg>
-                        </div>
-                    </label>
-                </div>
-                <div class="input-section">
-                    <label for="email" class="form-input-label">
-                        <div class="input-wrap">
-                            <span>Email</span>
-                            <input type="email" id="email" class="form-input" name="fillemail" required>
-                            <svg class="input-icon" width="18px" height="18px">
-                                <use href="./images/icons.svg/symbol-defs-4.svg#icon-email"></use>
-                            </svg>
-                        </div>
-                    </label>
-                </div>
-                <div class="input-section">
-                    <label for="comment" class="form-input-label">
-                        <div class="input-wrap">
-                            <span>Comment</span>
-                            <input type="text" id="comment" class="form-text-input" placeholder="Text input">
-                        </div>
-                    </label>
-                </div>
+                    </span>
+                </label>
+                <label for="phone" class="input-section form-input-label">
 
+                    <span label-text>Phone</span>
+                    <span input-form-icon>
+                        <input type="tel" id="phone" class="form-input" name="fillphone" required>
+                        <svg class="input-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="email" class="input-section form-input-label ">
+
+                    <span label-text>Email</span>
+                    <span input-form-icon>
+                        <input type="email" id="email" class="form-input" name="fillemail" required>
+                        <svg class="input-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg/symbol-defs-4.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="comment" class="input-section-comment form-input-label">
+
+                    <span label-text>Comment</span>
+                    <textarea type="text" id="comment" class="form-text-input" placeholder="Text input">
+
+                </label>
                 <input type="checkbox" name="check" class="form-checkbox visually-hidden" id="option-1">
-                <label for="option-1" class="form-label-checkbox">I accept the terms and conditions of the
-                    <span checkbox-link-wrap>
-                        <a href="" class="form-link-chekbox">Privacy Policy</a></span>
-                    <div>
+                <label for="option-1" class="form-label-checkbox">
+                     <span>
                         <svg class="form-checkbox-item" width="10px" height="8px">
                             <use href="./images/icons.svg/symbol-defs-4.svg#icon-check"></use>
                         </svg>
-                    </div>
+                    </span>I accept the terms and conditions of the
+                        <a href="" class="form-link-chekbox">Privacy Policy</a>
                 </label>
                 <button type="submit" class="input-button">Send</button>
             </form>
